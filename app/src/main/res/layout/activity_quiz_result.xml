@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img11"
+    android:gravity="center"
+    tools:context=".QuizResult">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="304dp"
+            android:layout_height="189dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="85dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:src="@drawable/trophy1" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginEnd="20dp"
+        android:background="#17C2ED"
+        app:cardBackgroundColor="#FAC011"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="100dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Congrats!"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+
+    </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginEnd="20dp"
+            android:background="#17C2ED"
+            app:cardBackgroundColor="#FAC011"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="100dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/score_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Score:0/10"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/restart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/acme"
+            android:gravity="center"
+            android:text="Restart"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            app:backgroundTint="#CA330D"
+            android:onClick="restartQuiz"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

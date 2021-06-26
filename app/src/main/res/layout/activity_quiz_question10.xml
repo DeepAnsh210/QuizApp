@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img2"
+    android:gravity="center"
+    android:orientation="vertical"
+
+    tools:context=".QuizQuestion10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/_10_which_organisation_does_this_flag_belongs_to"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_width="286dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="50dp"
+            android:background="@color/white"
+            android:src="@drawable/img10"
+            android:contentDescription="@string/_10"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_margin="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/b11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="redColor1"
+            android:text="@string/unsc"
+            app:backgroundTint="#17C2ED"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/b12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="redColor2"
+            android:text="@string/brics"
+            app:backgroundTint="#17C2ED"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/b13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="redColor3"
+            android:text="@string/nato"
+            app:backgroundTint="#17C2ED"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/b14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="greenColor"
+            android:text="@string/unicef"
+            app:backgroundTint="#17C2ED"
+            tools:ignore="UsingOnClickInXml" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
